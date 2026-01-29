@@ -1,0 +1,43 @@
+scores = []
+total = 0
+count = 0
+pass_count = 0
+fail_count = 0
+excellent_count = 0
+i = 0
+
+while i < 5:
+    score = int(input("Enter score: "))
+    scores.append(score)
+
+    total += score
+    count += 1
+
+    if count == 1:
+        highest = score
+        lowest = score
+    else:
+        if score > highest:
+            highest = score
+        if score < lowest:
+            lowest = score
+
+    if score > 80:
+        excellent_count += 1
+
+    if score >= 50:
+        pass_count += 1
+    else:
+        fail_count += 1
+
+    i += 1
+
+average = total / count
+
+print("Average score: " + str(average))
+print("excellent_count: " + str(excellent_count))
+print("pass_count: " + str(pass_count))
+print("Highest score: " + str(highest))
+print("Lowest score: " + str(lowest))
+print("Pass count: " + str(pass_count))
+print("Fail count: " + str(fail_count))
