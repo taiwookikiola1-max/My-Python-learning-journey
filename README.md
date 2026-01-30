@@ -28,3 +28,29 @@ without sorting the list.
 - Loops
 - Comparisons
 
+# Profit Calculator
+
+A simple Python program that calculates gross profit and net profit
+using terminal input.
+
+## How it works
+- User enters revenue, COGS, and operating expenses
+- Program calculates gross and net profit
+- Results are displayed in the terminal
+
+## Formulas
+- Gross Profit = Revenue - COGS
+- Net Profit = Gross Profit - Operating Expenses
+
+## Concepts Used
+- Functions
+- User input
+- Arithmetic operations
+
+
+
+
+
+
+
+
