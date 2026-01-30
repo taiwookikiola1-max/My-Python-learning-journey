@@ -1,0 +1,28 @@
+def calculate_gross_profit(revenue, cogs):
+    return revenue - cogs
+
+
+def calculate_net_profit(gross_profit, operating_expenses):
+    return gross_profit - operating_expenses
+
+
+
+
+def main():
+    revenue = float(input("Enter total revenue: "))
+    cogs = float(input("Enter cost of goods sold (COGS): "))
+    operating_expenses = float(input("Enter operating expenses: "))
+
+    gross_profit = calculate_gross_profit(revenue, cogs)
+    net_profit = calculate_net_profit(gross_profit, operating_expenses)
+
+    if revenue < 0 or cogs < 0 or operating_expenses < 0:
+        print("Values cannot be negative.")
+        return
+
+    print("\n--- Profit Summary ---")
+    print("Gross Profit:", gross_profit)
+    print("Net Profit:", net_profit)
+
+
+main()
