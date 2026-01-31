@@ -47,6 +47,21 @@ using terminal input.
 - User input
 - Arithmetic operations
 
+## Financial Ratios Calculator
+
+A Python program that calculates key financial ratios:
+- Current Ratio
+- Debt-to-Equity Ratio
+
+### Formulas
+- Current Ratio = Current Assets / Current Liabilities
+- Debt-to-Equity Ratio = Total Liabilities / Total Equity
+
+### Concepts Used
+- Functions
+- User input
+- Conditional logic
+- Error handling
 
 
 
