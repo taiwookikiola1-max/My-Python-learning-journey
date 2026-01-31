@@ -64,6 +64,61 @@ A Python program that calculates key financial ratios:
 - Error handling
 
 
+---
+
+# Finance Calculator (Menu-Based)
+
+A simple menu-driven Python application that performs common financial
+calculations using terminal input.
+
+The project is designed to practice writing modular Python code and
+applying basic finance concepts programmatically.
+
+---
+
+## Features
+
+- Calculate Gross Profit and Net Profit
+- Calculate key financial ratios:
+  - Current Ratio
+  - Debt-to-Equity Ratio
+- Menu-based user interaction
+- Input validation for division-by-zero cases
+- Modular project structure
+
+---
+
+## How It Works
+
+When the program runs, the user is presented with a menu:
+
+1. Calculate Profit  
+2. Calculate Financial Ratios  
+3. Exit  
+
+The user selects an option and enters the required financial values.
+The results are displayed in the terminal.
+
+---
+
+## Formulas Used
+
+- **Gross Profit** = Revenue − Cost of Goods Sold  
+- **Net Profit** = Gross Profit − Operating Expenses  
+- **Current Ratio** = Current Assets ÷ Current Liabilities  
+- **Debt-to-Equity Ratio** = Total Liabilities ÷ Total Equity  
+
+---
+
+## Project Structure
+``text
+finance-calculator/
+├── main.py
+├── profit.py
+└── ratios.py
+
+
+
 
 
 
