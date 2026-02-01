@@ -118,7 +118,19 @@ finance-calculator/
 └── ratios.py
 
 
+Features
 
+The program calculates the following financial metrics:
+
+Gross Profit
+
+Gross Profit Margin (%)
+
+Operating Profit
+
+Operating Profit Margin (%)
+
+These metrics are commonly used in financial reporting, business analysis, and decision-making.
 
 
 
