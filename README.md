@@ -132,6 +132,34 @@ Operating Profit Margin (%)
 
 These metrics are commonly used in financial reporting, business analysis, and decision-making.
 
+# Finance Calculator (Python)
+
+A simple command-line finance calculator built with Python.  
+This project allows users to calculate business profit figures and key financial ratios using validated user input.
+
+## Features
+- Calculate Gross Profit and Net Profit
+- Calculate Current Ratio and Debt-to-Equity Ratio
+- Input validation to prevent invalid or negative values
+- Menu-driven command-line interface
+- Beginner-friendly, clean, and readable code
+
+## How It Works
+The program displays a menu where users can:
+1. Enter revenue, costs, and expenses to compute profit
+2. Enter balance sheet values to compute financial ratios
+3. Exit the application safely
+
+All inputs are validated to ensure accurate calculations.
+
+## Technologies Used
+- Python 3
+- Standard Python libraries only
+
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/taiwookikiola1-max/my-python-learning-journey
 
 
 
