@@ -8,7 +8,7 @@ def calculate_gross_profit(revenue, cogs):
 def calculate_net_profit(gross_profit, operating_expenses):
     if operating_expenses <= 0:
         print("Values cannot be negative or zero.")
-    
+
     return gross_profit - operating_expenses
 
 
@@ -30,5 +30,6 @@ def main():
     print("Gross Profit:", gross_profit)
     print("Net Profit:", net_profit)
 
+if __name__ == '__main__':
+    main()
 
-main()
