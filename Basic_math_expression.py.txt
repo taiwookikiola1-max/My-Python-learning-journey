@@ -1,0 +1,26 @@
+def ar_rect(l, b):
+    return l * b
+
+
+def get_positive_number(prompt):
+    while True:
+        try:
+            value = float(input(prompt))
+            if value <= 0:
+                print("Please enter a number greater than 0.")
+            else:
+                return value
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+
+
+def main():
+    l = get_positive_number("Enter the length of the rectangle: ")
+    b = get_positive_number("Enter the breadth of the rectangle: ")
+
+    area = ar_rect(l, b)
+    print("Area of the rectangle:", area)
+
+
+if __name__ == "__main__":
+    main()
