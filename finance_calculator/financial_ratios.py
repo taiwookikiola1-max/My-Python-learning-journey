@@ -1,3 +1,13 @@
+
+This script calculates current ratio, and debt-to-equity ratio
+based on user inputs.
+
+Author: Taiwo Okikiola
+
+
+
+
+
 def calc_current_ratio(current_assets, current_liabilities):
     if current_liabilities == 0:
         return None
@@ -34,3 +44,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
