@@ -1,5 +1,23 @@
 
+   """
+Profit margin Calculator
+
+This script calculates gross profit, gross profit margin, operating profit, operating profit margin 
+based on user inputs.
+
+Author: Taiwo Okikiola
+"""
+
+
+
+def calc_gross_profit(revenue, cogs):
+    if revenue == 0:
+        return 0
     return revenue - cogs
+
+# revenue is the total income generated in the accounting / fiscal year
+# cogs is the total cost of goods sold during the period in question
+
 
 
 def calc_gross_profit_margin(revenue, cogs):
@@ -11,6 +29,7 @@ def calc_gross_profit_margin(revenue, cogs):
 def calc_operating_profit(gross_profit, operating_expenses):
     return gross_profit - operating_expenses
 
+# operating expenses are the expenses incurred during the said period
 
 def calc_operating_profit_margin(operating_profit, revenue):
     if revenue == 0:
@@ -36,4 +55,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
