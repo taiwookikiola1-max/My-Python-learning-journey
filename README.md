@@ -1,166 +1,37 @@
-## Student Score Analyzer
+# My Python Learning Journey 🐍
 
-This program:
-- Collects 5 student scores
-- Calculates the average score
-- Determines highest and lowest scores
-- Counts pass, fail, and excellent results
+This repository documents my hands-on journey learning Python through practical exercises and small projects.  
+It focuses on building strong programming fundamentals while applying Python to real-world and finance-related problems.
 
-### Concepts used
-- While loops
-- Lists
-- Conditional statements
-- User input
+## 📌 What This Repository Contains
 
+The repository includes beginner-to-intermediate Python programs such as:
+- Financial calculations (profit, ratios)
+- Control flow (if/else, loops)
+- Functions and modular programming
+- Input validation and error handling
+- Simple command-line applications
 
-## Second Largest Number Finder
+Each script represents a learning milestone and improvement in problem-solving skills.
 
-A Python function that finds the second largest number in a list
-without sorting the list.
+## 🧮 Featured Project: Finance Calculator
 
-### Features
-- Handles duplicate values
-- Works with negative numbers
-- Uses iteration and conditional logic
-
-### Concepts used
-- Functions
-- Loops
-- Comparisons
-
-# Profit Calculator
-
-A simple Python program that calculates gross profit and net profit
-using terminal input.
-
-## How it works
-- User enters revenue, COGS, and operating expenses
-- Program calculates gross and net profit
-- Results are displayed in the terminal
-
-## Formulas
-- Gross Profit = Revenue - COGS
-- Net Profit = Gross Profit - Operating Expenses
-
-## Concepts Used
-- Functions
-- User input
-- Arithmetic operations
-
-## Financial Ratios Calculator
-
-A Python program that calculates key financial ratios:
-- Current Ratio
-- Debt-to-Equity Ratio
-
-### Formulas
-- Current Ratio = Current Assets / Current Liabilities
-- Debt-to-Equity Ratio = Total Liabilities / Total Equity
-
-### Concepts Used
-- Functions
-- User input
-- Conditional logic
-- Error handling
-
-
----
-
-# Finance Calculator (Menu-Based)
-
-A simple menu-driven Python application that performs common financial
-calculations using terminal input.
-
-The project is designed to practice writing modular Python code and
-applying basic finance concepts programmatically.
-
----
-
-## Features
-
+A command-line finance calculator that allows users to:
 - Calculate Gross Profit and Net Profit
-- Calculate key financial ratios:
-  - Current Ratio
-  - Debt-to-Equity Ratio
-- Menu-based user interaction
-- Input validation for division-by-zero cases
-- Modular project structure
+- Calculate Current Ratio and Debt-to-Equity Ratio
+- Handle invalid or zero inputs safely
+- Navigate using a menu-driven interface
 
----
-
-## How It Works
-
-When the program runs, the user is presented with a menu:
-
-1. Calculate Profit  
-2. Calculate Financial Ratios  
-3. Exit  
-
-The user selects an option and enters the required financial values.
-The results are displayed in the terminal.
-
----
-
-## Formulas Used
-
+### Example Calculations
 - **Gross Profit** = Revenue − Cost of Goods Sold  
 - **Net Profit** = Gross Profit − Operating Expenses  
 - **Current Ratio** = Current Assets ÷ Current Liabilities  
 - **Debt-to-Equity Ratio** = Total Liabilities ÷ Total Equity  
 
----
+## ▶️ How to Run the Code
 
-## Project Structure
-``text
-finance-calculator/
-├── main.py
-├── profit.py
-└── ratios.py
-
-
-Features
-
-The program calculates the following financial metrics:
-
-Gross Profit
-
-Gross Profit Margin (%)
-
-Operating Profit
-
-Operating Profit Margin (%)
-
-These metrics are commonly used in financial reporting, business analysis, and decision-making.
-
-# Finance Calculator (Python)
-
-A simple command-line finance calculator built with Python.  
-This project allows users to calculate business profit figures and key financial ratios using validated user input.
-
-## Features
-- Calculate Gross Profit and Net Profit
-- Calculate Current Ratio and Debt-to-Equity Ratio
-- Input validation to prevent invalid or negative values
-- Menu-driven command-line interface
-- Beginner-friendly, clean, and readable code
-
-## How It Works
-The program displays a menu where users can:
-1. Enter revenue, costs, and expenses to compute profit
-2. Enter balance sheet values to compute financial ratios
-3. Exit the application safely
-
-All inputs are validated to ensure accurate calculations.
-
-## Technologies Used
-- Python 3
-- Standard Python libraries only
-
-## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/taiwookikiola1-max/my-python-learning-journey
-
-
+   git clone https://github.com/taiwookikiola1-max/My-Python-learning-journey.git
 
 
