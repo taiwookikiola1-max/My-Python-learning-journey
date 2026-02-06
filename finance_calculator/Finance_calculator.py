@@ -1,77 +1,99 @@
 """
 Finance Calculator
 
-This script calculates gross profit, net profit, current ratio, and debt-to-equity ratio
-based on user inputs.
+This module provides functions to calculate financial metrics for a business:
+- Gross Profit
+- Net Profit
+- Current Ratio
+- Debt-to-Equity Ratio
 
 Author: Taiwo Okikiola
 """
 
+def calculate_gross_profit(revenue: float, cogs: float) -> float:
+    """
+    Calculate the gross profit of a business.
 
-def calculate_gross_profit(revenue, cogs):
+    Parameters:
+    revenue (float): Total revenue of the business.
+    cogs (float): Cost of goods sold.
+
+    Returns:
+    float: Gross profit (revenue - cogs)
+    """
     return revenue - cogs
-# cogs is the cost of goods sold
 
-def calculate_net_profit(gross_profit, operating_expenses):
+def calculate_net_profit(gross_profit: float, operating_expenses: float) -> float:
+    """
+    Calculate the net profit of a business.
+
+    Parameters:
+    gross_profit (float): Gross profit amount
+    operating_expenses (float): Total operating expenses
+
+    Returns:
+    float: Net profit (gross profit - operating expenses)
+    """
     return gross_profit - operating_expenses
 
-def current_ratio(current_assets, current_liabilities):
+def current_ratio(current_assets: float, current_liabilities: float) -> float | None:
+    """
+    Calculate the current ratio, a liquidity metric.
+
+    Parameters:
+    current_assets (float): Total current assets
+    current_liabilities (float): Total current liabilities
+
+    Returns:
+    float: Current ratio (current_assets / current_liabilities)
+    None: If current_liabilities is zero to avoid division by zero
+    """
     if current_liabilities == 0:
         return None
     return current_assets / current_liabilities
 
+def debt_to_equity(total_liabilities: float, total_equity: float) -> float | None:
+    """
+    Calculate the debt-to-equity ratio.
 
-def debt_to_equity(total_liabilities, total_equity):
+    Parameters:
+    total_liabilities (float): Total liabilities
+    total_equity (float): Total equity
+
+    Returns:
+    float: Debt-to-equity ratio (total_liabilities / total_equity)
+    None: If total_equity is zero to avoid division by zero
+    """
     if total_equity == 0:
         return None
     return total_liabilities / total_equity
 
-def profit_menu():
-    revenue = float(input("Enter revenue: "))
-    cogs = float(input("Enter COGS: "))
-    operating_expenses = float(input("Enter operating expenses: "))
-
-    gross = calculate_gross_profit(revenue, cogs)
-    net = calculate_net_profit(gross, operating_expenses)
-
-    print("\n--- Profit Summary ---")
-    print("Gross Profit:", round(gross, 2))
-    print("Net Profit:", round(net, 2))
-
-
-def ratios_menu():
-    current_assets = float(input("Enter current assets: "))
-    current_liabilities = float(input("Enter current liabilities: "))
-    total_liabilities = float(input("Enter total liabilities: "))
-    total_equity = float(input("Enter total equity: "))
-
-    cr = current_ratio(current_assets, current_liabilities)
-    dte = debt_to_equity(total_liabilities, total_equity)
-
-    print("\n--- Financial Ratios ---")
-    print("Current Ratio:", "Invalid" if cr is None else round(cr, 2))
-    print("Debt-to-Equity Ratio:", "Invalid" if dte is None else round(dte, 2))
-
-
 def main():
-    while True:
-        print("\n=== Finance Calculator ===")
-        print("1. Calculate Profit")
-        print("2. Calculate Financial Ratios")
-        print("3. Exit")
+    """Main function to interactively calculate financial metrics."""
+    print("=== Finance Calculator ===")
+    try:
+        revenue = float(input("Enter revenue: "))
+        cogs = float(input("Enter cost of goods sold (COGS): "))
+        gross_profit = calculate_gross_profit(revenue, cogs)
+        print(f"Gross Profit: {gross_profit}")
 
-        choice = input("Choose an option: ")
+        operating_expenses = float(input("Enter operating expenses: "))
+        net_profit = calculate_net_profit(gross_profit, operating_expenses)
+        print(f"Net Profit: {net_profit}")
 
-        if choice == "1":
-            profit_menu()
-        elif choice == "2":
-            ratios_menu()
-        elif choice == "3":
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Try again.")
+        current_assets = float(input("Enter current assets: "))
+        current_liabilities = float(input("Enter current liabilities: "))
+        cr = current_ratio(current_assets, current_liabilities)
+        print(f"Current Ratio: {cr if cr is not None else 'Undefined (Division by zero)'}")
 
+        total_liabilities = float(input("Enter total liabilities: "))
+        total_equity = float(input("Enter total equity: "))
+        de_ratio = debt_to_equity(total_liabilities, total_equity)
+        print(f"Debt-to-Equity Ratio: {de_ratio if de_ratio is not None else 'Undefined (Division by zero)'}")
+
+    except ValueError:
+        print("Invalid input! Please enter numeric values only.")
 
 if __name__ == "__main__":
     main()
+
