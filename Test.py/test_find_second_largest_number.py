@@ -1,5 +1,5 @@
 import pytest
-from find_second_largest import find_second_largest
+from find_second_largest_number import find_second_largest_number
 
 def test_normal_case():
     numbers = [10, 45, 22, 45, 30]
