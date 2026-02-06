@@ -1,70 +1,73 @@
-# My Python Learning Journey 🐍
+# My Python Learning Journey
 
-This repository documents my hands-on journey learning Python through practical exercises and small projects.  
-It focuses on building strong programming fundamentals while applying Python to real-world and finance-related problems.
+## Overview
+This repository is a collection of Python projects and exercises I have built while learning Python programming. It demonstrates my understanding of core Python concepts such as functions, loops, conditionals, file handling, and basic data structures. 
 
-##  What This Repository Contains
+The purpose of this repo is to showcase my coding skills, learning progression, and readiness to contribute to open source projects like those in Outreachy.
 
-The repository includes beginner-to-intermediate Python programs such as:
-- Financial calculations (profit, ratios)
-- Control flow (if/else, loops)
-- Functions and modular programming
-- Input validation and error handling
-- Simple command-line applications
+---
 
-Each script represents a learning milestone and improvement in problem-solving skills.
+## Projects
 
-##  Featured Project: Finance Calculator
+| Project | Description | Key Concepts |
+|---------|-------------|--------------|
+| `Finance_calculator.py` | Calculates gross profit, net profit, current ratio, and debt-to-equity ratio based on user input. | Functions, Arithmetic, Input/Output |
+| `Loops_and_Functions` | Exercises with loops and custom functions to automate repetitive tasks. | Loops, Functions, Problem Solving |
+| `Other scripts` | Various Python exercises for practice and experimentation. | Python Basics, Logic Building |
 
-A command-line finance calculator that allows users to:
-- Calculate Gross Profit and Net Profit
-- Calculate Current Ratio and Debt-to-Equity Ratio
-- Handle invalid or zero inputs safely
-- Navigate using a menu-driven interface
+---
 
-### Example Calculations
-- **Gross Profit** = Revenue − Cost of Goods Sold  
-- **Net Profit** = Gross Profit − Operating Expenses  
-- **Current Ratio** = Current Assets ÷ Current Liabilities  
-- **Debt-to-Equity Ratio** = Total Liabilities ÷ Total Equity  
+## Getting Started
 
-## ▶️ How to Run the Code
+Follow these steps to run the projects locally:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/taiwookikiola1-max/My-Python-learning-journey.git
+1. **Clone the repository**
+```bash
+git clone https://github.com/taiwookikiola1-max/My-Python-learning-journey.git
 
-  Purpose of This Repository
-This repository was created to:
+2. Navigate to the folder; My-Python-learning-journey
 
-Practice Python programming fundamentals
+3. Install any dependency if need be
 
-Build confidence writing clean, readable code
+4. Run a script of your choice, e.g, Finance_calculator.py
 
-Apply Python to accounting and finance-related problems
 
-Prepare for open-source contributions and internship opportunities (including Outreachy)
+How to Contribute
 
-  Skills Demonstrated
-Python fundamentals
+This repository is primarily a personal learning project. However, contributions and suggestions are welcome! Here’s how you can contribute:
 
-Functions and modular design
+Fork the repository
 
-Error handling and input validation
+Create a new branch for your feature/bug fix
 
-Problem-solving and logical thinking
+Make your changes and commit with clear messages
 
-Git & GitHub usage
+Submit a Pull Request
 
- Future Improvements
-Refactor projects into modules
 
-Add unit tests
 
-Improve documentation
+What I Learnt
 
-Contribute to open-source Python projects
+Writing clean, readable Python code
 
-👤 Author
-Taiwo Okikiola
-Aspiring Python Developer | Accounting & Finance Background
+Using functions to modularize code
+
+Handling user input and performing calculations
+
+Problem-solving through practical exercises
+
+Next Steps
+
+I plan to:
+
+Add more complex projects to showcase advanced Python concepts
+
+Include tests for all functions using pytest
+
+Contribute to open source Python projects and document those contributions here
+
+Contact
+
+GitHub: taiwookikiola1-max
+
+Email: taiwo.okikiola1@gmail.com
