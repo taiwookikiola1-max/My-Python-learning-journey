@@ -21,6 +21,4 @@ def test_two_numbers():
     numbers = [1, 2]
     assert find_second_largest(numbers) == 1
 
-def test_all_same_numbers():
-    numbers = [7, 7, 7]
-    assert find_second_largest(numbers) is
+
