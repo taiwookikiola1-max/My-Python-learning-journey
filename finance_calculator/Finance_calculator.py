@@ -1,6 +1,16 @@
+"""
+Finance Calculator
+
+This script calculates gross profit, net profit, current ratio, and debt-to-equity ratio
+based on user inputs.
+
+Author: Taiwo Okikiola
+"""
+
+
 def calculate_gross_profit(revenue, cogs):
     return revenue - cogs
-
+# cogs is the cost of goods sold
 
 def calculate_net_profit(gross_profit, operating_expenses):
     return gross_profit - operating_expenses
@@ -65,5 +75,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
