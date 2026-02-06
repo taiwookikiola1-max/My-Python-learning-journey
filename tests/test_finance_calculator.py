@@ -1,4 +1,3 @@
-import pytest
 from Finance_calculator import (
     calculate_gross_profit,
     calculate_net_profit,
