@@ -66,6 +66,11 @@ Include tests for all functions using pytest
 
 Contribute to open source Python projects and document those contributions here
 
+
+
+If something doesn’t run, please kindly reach out via any of these 2 ways
+
+
 Contact
 
 GitHub: taiwookikiola1-max
